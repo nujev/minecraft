@@ -1,0 +1,6 @@
+sudo apt update
+sudo apt upgrade -y
+sudo apt install nginx snapd apache2-utils -y
+sudo snap install --classic certbot
+sudo certbot --nginx
+sudo htpasswd -c /etc/nginx/conf.d/.htpasswd user
